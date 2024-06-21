@@ -48,3 +48,19 @@ p {
 }
 
 /** CODIGO AQUI **/
+@media (min-width: 768px) {
+    .con-sidebar {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        column-gap: 4rem;
+        grid-auto-flow: column; /* Forma mas corta para acomodar */
+    }
+    aside {
+        grid-column: 2 / 3;
+        /* grid-row: 1 / 3; */
+    }
+    /* Forma larga de acomodar */
+    /* article {
+        grid-row: 1 / 2;
+    } */
+}
